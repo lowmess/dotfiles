@@ -13,7 +13,7 @@ mkdir ~/.nvm
 npm i -g np commitizen cz-conventional-changelog
 
 # Install Apps via Cask
-brew cask install google-chrome atom hyper rightfont google-play-music-desktop-player dropbox bartender alfred 1password dash kap epichrome istat-menus transmission slack firefox figma vlc
+brew cask install google-chrome atom hyper rightfont google-play-music-desktop-player dropbox bartender alfred 1password dash kap epichrome istat-menus transmission slack firefox figma vlc ngrok
 
 # Signin to MAS
 mas signin alec@lowmess.com
