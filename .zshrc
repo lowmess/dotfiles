@@ -3,8 +3,8 @@ autoload -Uz compinit && compinit
 
 # aliases
 alias ls='ls -AGF'
-alias gc='git cz'
-alias gca='git cz -a'
+alias cz='git cz'
+alias cza='git cz -a'
 alias git-clean='git branch --merged | grep -Ev "(\*|master|develop)" | xargs -n 1 git branch -d'
 alias git-purge='git branch | grep -v "master\|develop" | xargs git branch -d'
 alias cz-init='commitizen init cz-conventional-changelog --save-dev --save-exact'
