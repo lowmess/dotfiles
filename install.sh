@@ -14,7 +14,7 @@ npm i -g np commitizen cz-conventional-changelog hpm-cli
 hpm i hyperterm-material hyperterm-blink hyperterm-tab-icons hyperlinks
 
 # Install Apps via Cask
-brew cask install google-chrome atom hyper rightfont google-play-music-desktop-player dropbox bartender alfred 1password dash kap epichrome istat-menus transmission slack firefox figma vlc ngrok
+brew cask install google-chrome atom hyper rightfont google-play-music-desktop-player dropbox bartender alfred 1password dash kap epichrome istat-menus transmission slack firefox figma vlc ngrok aerial
 
 # Signin to MAS
 mas signin alec@lowmess.com
