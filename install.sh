@@ -7,14 +7,16 @@ xcode-select --install
 # Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Install CLI tools
+# Install things with Homebrew
 brew install nvm yarn mas trash zsh-git-prompt zsh-syntax-highlighting autojump
+brew cask install google-chrome atom hyper rightfont google-play-music-desktop-player dropbox bartender alfred 1password dash kap epichrome istat-menus transmission slack firefox figma vlc ngrok aerial
+
+# Node Stuff
 mkdir ~/.nvm
+nvm install 6.9
+nvm alias default 6.9
 npm i -g np commitizen cz-conventional-changelog hpm-cli
 hpm i hyperterm-material hyperterm-blink hyperterm-tab-icons hyperlinks
-
-# Install Apps via Cask
-brew cask install google-chrome atom hyper rightfont google-play-music-desktop-player dropbox bartender alfred 1password dash kap epichrome istat-menus transmission slack firefox figma vlc ngrok aerial
 
 # Signin to MAS
 mas signin alec@lowmess.com
