@@ -10,7 +10,7 @@ alias git-purge='git branch | grep -v "master\|develop" | xargs git branch -d'
 alias cz-init='commitizen init cz-conventional-changelog --save-dev --save-exact'
 alias npm-ri='npm cache clean && rm -rf node_modules && npm i'
 alias r='npm run'
-alias awd='atom -n $(pwd)'
+alias awd='atom -n .'
 
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
