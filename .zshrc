@@ -8,8 +8,7 @@ alias cza='git cz -a'
 alias git-clean='git branch --merged | grep -Ev "(\*|master|develop)" | xargs -n 1 git branch -d'
 alias git-purge='git branch | grep -v "master\|develop" | xargs git branch -d'
 alias cz-init='commitizen init cz-conventional-changelog --save-dev --save-exact'
-alias npm-ri='npm cache clean && rm -rf node_modules && npm i'
-alias r='npm run'
+alias r='yarn run'
 alias awd='atom -n .'
 
 # autojump
