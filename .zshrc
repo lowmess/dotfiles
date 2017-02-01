@@ -2,6 +2,7 @@
 autoload -Uz compinit && compinit
 
 # aliases
+alias git='hub'
 alias ls='ls -AGF'
 alias cz='git cz'
 alias cza='git cz -a'
