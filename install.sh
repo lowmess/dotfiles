@@ -11,11 +11,21 @@ xcode-select --install
 brew install nvm yarn mas trash zsh-git-prompt zsh-syntax-highlighting autojump hub
 brew cask install google-chrome atom hyper rightfont google-play-music-desktop-player dropbox bartender alfred 1password dash kap epichrome istat-menus transmission slack firefox figma vlc ngrok aerial
 
+# git stuff
+git config --global alias.eat 'stash'
+git config --global alias.poop 'stash pop'
+git config --global hub.protocol https
+
 # Node Stuff
 mkdir ~/.nvm
 nvm install 6.9
 nvm alias default 6.9
 npm i -g np commitizen cz-conventional-changelog hpm-cli
+
+# Atom plugins
+apm i sync-settings
+
+# Hyper plugins
 hpm i hyperterm-material hyperterm-blink hyperterm-tab-icons hyperlinks
 
 # Signin to MAS
