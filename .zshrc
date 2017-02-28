@@ -30,7 +30,7 @@ ZSH_THEME_GIT_PROMPT_AHEAD="%{↑%G%}"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{…%G%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}%{✔%G%}"
 
-export PS1='%1~$(git_super_status) ∆ '
+export PS1='%1~$(git_super_status) ► '
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
