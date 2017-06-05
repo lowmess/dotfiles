@@ -32,7 +32,7 @@ hpm i hyperterm-material hyperterm-blink hyperterm-tab-icons hyperlinks
 mas signin alec@lowmess.com
 
 # Install App Store apps
-mas install 413857545 824183456 824171161 409789998 1106867065 1053031090
+mas install 413857545 824183456 824171161 409789998 1106867065 1053031090 982710545
 
 # create config files
 echo 'source $HOME/dotfiles/.zshrc' > ~/.zshrc
