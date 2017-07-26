@@ -8,7 +8,7 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install things with Homebrew
-brew install nvm yarn mas trash zsh-git-prompt zsh-syntax-highlighting autojump hub
+brew install nvm yarn mas trash zsh-git-prompt zsh-syntax-highlighting autojump hub tree
 brew cask install google-chrome atom hyper rightfont google-play-music-desktop-player dropbox bartender alfred 1password dash kap epichrome istat-menus transmission slack firefox figma vlc ngrok aerial
 
 # git stuff
