@@ -10,7 +10,6 @@ alias git-clean='git branch --merged | grep -Ev "(\*|master|develop)" | xargs -n
 alias git-purge='git branch | grep -v "master\|develop" | xargs git branch -d'
 alias cz-init='commitizen init cz-conventional-changelog --save-dev --save-exact'
 alias r='yarn run'
-alias awd='atom -n .'
 alias tree='tree -FC --filelimit=100 --dirsfirst --prune'
 
 # functions
