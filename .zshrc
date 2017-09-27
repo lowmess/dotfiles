@@ -66,5 +66,8 @@ load-nvmrc
 export EDITOR='nano'
 export VISUAL='nano'
 
+# autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
