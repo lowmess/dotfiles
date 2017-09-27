@@ -17,8 +17,9 @@ function weather () {
   curl -H "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Tempe}"?0q
 }
 
-# autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+# z - jump around
+export _Z_CMD='j'
+source /usr/local/etc/profile.d/z.sh
 
 # git prompt
 source /usr/local/opt/zsh-git-prompt/zshrc.sh
