@@ -14,7 +14,7 @@ alias tree='tree -FC --filelimit=100 --dirsfirst --prune'
 
 # functions
 function weather () {
-  curl "wttr.in/$1?0q"
+  curl -H "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Tempe}"?0q
 }
 
 # autojump
