@@ -14,7 +14,7 @@ Next, let's install git.
 xcode-select --install
 ```
 
-Now let's clone or download the repo to ``~/dotfiles/`.
+Now let's clone or download the repo to `~/dotfiles/`.
 
 ```bash
 cd ~ && git clone https://github.com/lowmess/dotfiles.git
