@@ -1,0 +1,9 @@
+[push]
+	default = simple
+[user]
+	email = alec@lowmess.com
+[alias]
+  eat = stash
+  poop = stash pop
+[hub]
+  protocol = https

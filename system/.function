@@ -1,0 +1,9 @@
+# get current local weather, tempe by default
+function weather() {
+  curl -H "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Tempe}"?0q
+}
+
+# install global npm tools. useful when switching nvm versions
+function npmglobals() {
+  npm i -g np commitizen cz-conventional-changelog hpm-cli
+}

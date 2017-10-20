@@ -1,0 +1,21 @@
+# git stuff that doesn't belong in .gitconfig
+alias git='hub'
+alias git-clean='git branch --merged | grep -Ev "(\*|master|develop)" | xargs -n 1 git branch -d'
+alias git-purge='git branch | grep -v "master\|develop" | xargs git branch -d'
+
+# commitizen
+alias cz='git cz'
+alias cza='git cz -a'
+alias cz-init='commitizen init cz-conventional-changelog --save-dev --save-exact'
+
+# move up dirs
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# Recursively remove .DS_Store files
+alias cleands='find . -type f -name "*.DS_Store" -ls -delete'
+
+alias ls='ls -AGF'
+alias r='yarn run'
+alias tree='tree -FC --filelimit=100 --dirsfirst --prune'
