@@ -1,6 +1,7 @@
 [push]
   default = simple
 [user]
+  name = Alec Lomas
   email = alec@lowmess.com
 [alias]
   eat = stash
