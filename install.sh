@@ -1,5 +1,5 @@
 # Install things with Homebrew
-. "$HOME/dotfiles/brew/brew.sh"
+source "$HOME/dotfiles/brew/brew.sh"
 
 # Set up nvm
 mkdir -p ~/.nvm
