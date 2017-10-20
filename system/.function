@@ -1,3 +1,13 @@
+# Create a new directory and enter it
+mk() {
+  mkdir -p "$@" && cd "$@"
+}
+
+# Calculator
+calc() {
+  echo "$*" | bc -l;
+}
+
 # get current local weather, tempe by default
 function weather() {
   curl -H "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Tempe}"?0q
@@ -6,4 +16,14 @@ function weather() {
 # install global npm tools. useful when switching nvm versions
 function npmglobals() {
   npm i -g np commitizen cz-conventional-changelog hpm-cli
+}
+
+# Open query in Dash app
+dash() {
+  case $# in
+    1) QUERY="$1";;
+    2) QUERY="$1:$2";;
+    *) echo "Usage: dash [docset] query"; return 1;
+  esac
+  open "dash://$QUERY"
 }

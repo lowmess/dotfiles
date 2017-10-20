@@ -1,10 +1,21 @@
-[push]
-  default = simple
 [user]
   name = Alec Lomas
   email = alec@lowmess.com
+
+[github]
+  user = lowmess
+
+[core]
+  editor = nano
+
+[push]
+  default = simple
+
 [alias]
   eat = stash
   poop = stash pop
+  # Switch to a branch, creating it if necessary
+  co = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+
 [hub]
   protocol = https
