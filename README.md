@@ -1,13 +1,13 @@
 ### Set up a new machine
 
-First things first, let's use zsh.
+First things first, let's use `zsh`.
 
 ```bash
 # set default shell to zsh
 chsh -s $(which zsh)
 ```
 
-Next, let's install git.
+Next, let's install `git`.
 
 ```bash
 # assuming macOS
