@@ -20,8 +20,5 @@ echo 'source $HOME/dotfiles/.zshrc' | cat - ~/.zshrc | sponge ~/.zshrc
 touch ~/.gitconfig
 echo '[include]\n  path = ~/dotfiles/git/.gitconfig' | cat - ~/.gitconfig | sponge ~/.gitconfig
 
-touch ~/.gitignore_global
-cat "$HOME/dotfiles/git/.gitignore_global" ~/.gitignore_global | sponge ~/.gitignore_global
-
 touch ~/.czrc
 echo '{\n  "path": "cz-conventional-changelog"\n}' | cat - ~/.czrc | sponge ~/.czrc

@@ -6,6 +6,7 @@
   user = lowmess
 
 [core]
+  excludesfile = ~/dotfiles/git/.gitignore_global
   editor = nano
 
 [push]
