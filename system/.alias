@@ -1,7 +1,7 @@
 # git stuff that doesn't belong in .gitconfig
 alias g='git'
-alias gclean='g branch --merged | grep -Ev "(\*|master|develop)" | xargs -n 1 g branch -d'
-alias gpurge='g branch | grep -v "master\|develop" | xargs g branch -d'
+alias gclean='git branch --merged | grep -Ev "(\*|master|develop)" | xargs -n 1 git branch -d'
+alias gpurge='git branch | grep -v "master\|develop" | xargs git branch -d'
 # alias `hub` to `git`
 eval "$(hub alias -s)"
 
