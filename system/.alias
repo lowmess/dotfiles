@@ -1,7 +1,7 @@
 # git stuff that doesn't belong in .gitconfig
 alias g='git'
-alias gclean='git branch --merged | grep -Ev "(\*|master|develop)" | xargs -n 1 git branch -d'
-alias gpurge='git branch | grep -v "master\|develop" | xargs git branch -d'
+alias g-clean='git branch --merged | grep -Ev "(\*|master|develop)" | xargs -n 1 git branch -d'
+alias g-purge='git branch | grep -v "master\|develop" | xargs git branch -d'
 # alias `hub` to `git`
 eval "$(hub alias -s)"
 
@@ -17,7 +17,7 @@ alias ....='cd ../../..'
 alias -- -="cd -"
 
 # Recursively remove .DS_Store files
-alias cleands='find . -type f -name "*.DS_Store" -ls -delete'
+alias clean-ds='find . -type f -name "*.DS_Store" -ls -delete'
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"

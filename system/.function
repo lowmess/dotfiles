@@ -14,7 +14,7 @@ function weather() {
 }
 
 # install global npm tools. useful when switching nvm versions
-function npmglobals() {
+function npm-globals() {
   npm i -g np commitizen cz-conventional-changelog hpm-cli
 }
 
