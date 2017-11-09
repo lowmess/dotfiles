@@ -27,5 +27,8 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias ls='ls -AGF'
 alias tree='tree -FC --filelimit=100 --dirsfirst --prune'
 
+# install global npm tools. useful when switching nvm versions
+alias npm-globals="npm i -g np commitizen cz-conventional-changelog hpm-cli gitmoji-cli"
+
 # run scripts
 alias r='yarn run'

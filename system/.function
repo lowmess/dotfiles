@@ -13,11 +13,6 @@ function weather() {
   curl -H "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Tempe}"?0q
 }
 
-# install global npm tools. useful when switching nvm versions
-function npm-globals() {
-  npm i -g np commitizen cz-conventional-changelog hpm-cli
-}
-
 # Open query in Dash app
 dash() {
   case $# in
