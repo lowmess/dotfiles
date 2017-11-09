@@ -15,6 +15,7 @@ brew "z"
 
 # set up cask
 tap "caskroom/cask"
+tap "caskroom/fonts"
 
 # install cask apps
 cask "google-chrome"
@@ -35,3 +36,5 @@ cask "slack"
 cask "transmission"
 cask "google-play-music-desktop-player"
 cask "aerial"
+cask "font-roboto"
+cask "font-roboto-mono"
