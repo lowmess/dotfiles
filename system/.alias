@@ -5,11 +5,6 @@ alias g-purge='git branch | grep -v "master\|develop" | xargs git branch -d'
 # alias `hub` to `git`
 eval "$(hub alias -s)"
 
-# commitizen
-alias cz='git cz'
-alias cza='git cz -a'
-alias cz-init='commitizen init cz-conventional-changelog --save-dev --save-exact'
-
 # move around dirs
 alias ..='cd ..'
 alias ...='cd ../..'
