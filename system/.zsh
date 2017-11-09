@@ -2,7 +2,6 @@
 autoload -Uz compinit && compinit
 
 # z - jump around
-export _Z_CMD='j'
 source /usr/local/etc/profile.d/z.sh
 
 # autosuggestions
