@@ -19,7 +19,7 @@ alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && kill
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # Better ls & tree defaults
-alias ls='ls -AGF'
+alias ls='gls -AGF --color --group-directories-first'
 alias tree='tree -FC --filelimit=100 --dirsfirst --prune'
 
 # install global npm tools. useful when switching nvm versions
