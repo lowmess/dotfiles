@@ -17,6 +17,8 @@
   poop = stash pop
   # Switch to a branch, creating it if necessary
   co = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+  # use gitmoji
+  moji = "!f() { gitmoji -c; }; f"
 
 [hub]
   protocol = https
