@@ -27,3 +27,7 @@ alias npm-globals="npm i -g np commitizen cz-conventional-changelog hpm-cli gitm
 
 # run scripts
 alias r='yarn run'
+
+# keep .hyper.js in sync
+alias sync-hyper="cp -f $HOME/.hyper.js $HOME/dotfiles/.hyper.js"
+alias update-hyper="cp -f $HOME/dotfiles/.hyper.js $HOME/.hyper.js"

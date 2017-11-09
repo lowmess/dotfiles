@@ -10,15 +10,15 @@ nvm alias default 8
 source $HOME/dotfiles/system/.function
 npmglobals
 
-# Hyper plugins
-hpm i hyperterm-material hyperterm-blink hyperterm-tab-icons hyperlinks
-
 # create config files
 touch ~/.zshrc
 echo 'source $HOME/dotfiles/.zshrc' | cat - ~/.zshrc | sponge ~/.zshrc
 
 touch ~/.gitconfig
 echo '[include]\n  path = ~/dotfiles/git/.gitconfig' | cat - ~/.gitconfig | sponge ~/.gitconfig
+
+source $HOME/dotfiles/system/.alias
+update-hyper
 
 touch ~/.czrc
 echo '{\n  "path": "cz-conventional-changelog"\n}' | cat - ~/.czrc | sponge ~/.czrc
