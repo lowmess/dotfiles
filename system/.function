@@ -29,3 +29,9 @@ dash() {
 move() {
   mv "$1" "${2:-$(pwd)}"/"$(basename $1)"
 }
+
+# Copy file without retyping name
+# The signature is the exact same as move()
+copy() {
+  cp "$1" "${2:-$(pwd)}"/"$(basename $1)"
+}
