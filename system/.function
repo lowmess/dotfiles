@@ -22,16 +22,3 @@ dash() {
   esac
   open "dash://$QUERY"
 }
-
-# Move file without retyping name
-# First argument should be the file's path, the second the target directory
-# File is moved to working directory if no second argument is passed
-move() {
-  mv "$1" "${2:-$(pwd)}"/"$(basename $1)"
-}
-
-# Copy file without retyping name
-# The signature is the exact same as move()
-copy() {
-  cp "$1" "${2:-$(pwd)}"/"$(basename $1)"
-}
