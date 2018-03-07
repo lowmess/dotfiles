@@ -24,7 +24,7 @@ alias tree='tree -FC --filelimit=100 --dirsfirst --prune'
 alias npm-globals="npm i -g npm np commitizen cz-conventional-changelog hpm-cli gitmoji-cli now"
 
 # run scripts
-alias r='yarn run'
+alias r='npm run'
 
 # keep .hyper.js in sync
 alias sync-hyper="cp -f $HOME/.hyper.js $HOME/dotfiles/.hyper.js"
