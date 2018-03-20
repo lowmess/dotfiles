@@ -3,6 +3,9 @@ alias g='git'
 # alias `hub` to `git`
 eval "$(hub alias -s)"
 
+# fuck
+eval $(thefuck --alias)
+
 # move around dirs
 alias ..='cd ..'
 alias ...='cd ../..'
