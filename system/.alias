@@ -32,3 +32,6 @@ alias r='npm run'
 # keep .hyper.js in sync
 alias sync-hyper="cp -f $HOME/.hyper.js $HOME/dotfiles/.hyper.js"
 alias update-hyper="cp -f $HOME/dotfiles/.hyper.js $HOME/.hyper.js"
+
+# shorter vs code
+alias c="code ."
