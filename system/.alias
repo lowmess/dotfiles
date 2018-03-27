@@ -1,33 +1,41 @@
-# shorter git
-alias g='git'
-# alias `hub` to `git`
-eval "$(hub alias -s)"
-
-# fuck
-eval $(thefuck --alias)
+##
+## system
+##
 
 # move around dirs
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 alias -- -="cd -"
 
 # Recursively remove .DS_Store files
-alias clean-ds='find . -type f -name "*.DS_Store" -ls -delete'
+alias clean-ds="find . -type f -name "*.DS_Store" -ls -delete"
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # Better ls & tree defaults
-alias ls='gls -AGF --color --group-directories-first'
-alias tree='tree -FC --filelimit=100 --dirsfirst --prune'
+alias ls="gls -AGF --color --group-directories-first"
+alias tree="tree -FC --filelimit=100 --dirsfirst --prune"
+
+##
+## tools
+##
+
+# shorter git
+alias g="git"
+# alias `hub` to `git`
+eval "$(hub alias -s)"
+
+# fuck
+eval "$(thefuck --alias)"
 
 # install global npm tools. useful when switching nvm versions
 alias npm-globals="npm i -g npm np commitizen cz-conventional-changelog hpm-cli gitmoji-cli now"
 
 # run scripts
-alias r='npm run'
+alias r="npm run"
 
 # keep .hyper.js in sync
 alias sync-hyper="cp -f $HOME/.hyper.js $HOME/dotfiles/.hyper.js"
