@@ -36,6 +36,3 @@ alias npm-globals="npm i -g npm np commitizen cz-conventional-changelog hpm-cli 
 
 # run scripts
 alias r="npm run"
-
-# shorter vs code
-alias c="code ."
