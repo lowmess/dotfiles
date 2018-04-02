@@ -1,7 +1,7 @@
 # shorter vs code
 c() {
   if [[ $# -eq 0 ]]; then
-    command code $(pwd)
+    command code "$(pwd)"
   else
     command code $@
   fi
