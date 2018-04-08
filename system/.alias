@@ -34,5 +34,6 @@ eval "$(thefuck --alias)"
 # install global npm tools. useful when switching nvm versions
 alias npm-globals="npm i -g npm np commitizen cz-conventional-changelog hpm-cli gitmoji-cli now"
 
-# run scripts
+# shorter npm
+alias i="npm install"
 alias r="npm run"
