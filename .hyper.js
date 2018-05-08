@@ -11,11 +11,11 @@ module.exports = {
     updateChannel: "stable",
 
     // default font size in pixels for all tabs
-    fontSize: 16,
+    fontSize: 18,
 
     // font family with optional fallbacks
     fontFamily:
-      '"Roboto Mono", Input, "Input Mono", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+      '"Dank Mono", "Roboto Mono", Input, "Input Mono", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
