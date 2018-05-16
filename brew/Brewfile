@@ -20,7 +20,6 @@ tap "caskroom/fonts"
 
 # install cask apps
 cask "1password"
-cask "aerial"
 cask "alfred"
 cask "bartender"
 cask "dash"
