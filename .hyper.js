@@ -43,13 +43,25 @@ module.exports = {
     backgroundColor: "#000",
 
     // terminal selection color
-    selectionColor: "rgba(38, 166, 154, 0.5)",
+    selectionColor: "rgba(62, 68, 81, 0.5)",
 
     // border color (window, tabs)
     borderColor: "#333",
 
     // custom CSS to embed in the main window
-    css: "",
+    css: `
+      .splitpane_divider {
+        background-color: #3c4049 !important;
+      }
+      .term_term {
+        opacity: 0.5;
+        transition: opacity 0.15s ease-in-out;
+        will-change: opacity;
+      }
+      .term_active .term_term {
+        opacity: 1;
+      }
+    `,
 
     // custom CSS to embed in the terminal window
     termCSS: "",
@@ -134,7 +146,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyperterm-tab-icons", "hyperemoji", "hyperterm-material"],
+  plugins: ["hyperterm-tab-icons", "hyperemoji", "hyperterm-atom-dark"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
