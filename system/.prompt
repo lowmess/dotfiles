@@ -13,6 +13,6 @@ ZSH_THEME_GIT_PROMPT_AHEAD="%{↑%G%}"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{…%G%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{✔%G%}"
 
-local dir="%{$fg[white]%}%1~$resetColor"
+local dir="%{$fg[white]%}%1~$reset_color"
 
-export PS1='$dir$(git_super_status) ► '
+export PS1='$dir$(git_super_status) %{$fg[white]%}►$reset_color '
