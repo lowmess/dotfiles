@@ -7,19 +7,9 @@ c() {
   fi
 }
 
-# Create a new directory and enter it
-mk() {
-  mkdir -p "$@" && cd "$@"
-}
-
 # Calculator
 calc() {
   echo "$*" | bc -l;
-}
-
-# get current local weather, tempe by default
-function weather() {
-  curl -H "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Tempe}"?0q
 }
 
 # Open query in Dash app
@@ -30,4 +20,26 @@ dash() {
     *) echo "Usage: dash [docset] query"; return 1;
   esac
   open "dash://$QUERY"
+}
+
+# Automatically install globals and set npm config when switching nvm versions
+nvm_with_config() {
+  if [[ $1 == "install" ]]; then
+    nvm "$@"
+    npm config set ignore-scripts true
+    npm-globals
+  else
+    nvm "$@"
+  fi
+}
+alias nvm="nvm_with_config"
+
+# Create a new directory and enter it
+mk() {
+  mkdir -p "$@" && cd "$@"
+}
+
+# get current local weather, tempe by default
+weather() {
+  curl -H "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Tempe}"?0q
 }
