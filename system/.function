@@ -26,7 +26,6 @@ dash() {
 nvm_with_config() {
   if [[ $1 == "install" ]]; then
     nvm "$@"
-    npm config set ignore-scripts true
     npm-globals
   else
     nvm "$@"
