@@ -22,6 +22,11 @@ dash() {
   open "dash://$QUERY"
 }
 
+# Get gzip size of file
+gzip-size() {
+  gzip -c $1 | wc -c
+}
+
 # Automatically install globals and set npm config when switching nvm versions
 nvm_with_config() {
   if [[ $1 == "install" ]]; then
