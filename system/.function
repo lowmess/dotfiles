@@ -24,7 +24,10 @@ dash() {
 
 # Get gzip size of file
 gzip-size() {
-  gzip -c $1 | wc -c
+  local bytesize=$(gzip -c $1 | wc -c)
+  local kbsize=$(bc -l <<< "($bytesize/1024)")
+  local formatted=$(printf "%.2f\n" $kbsize)
+  echo "$formatted"kb
 }
 
 # Automatically install globals and set npm config when switching nvm versions
