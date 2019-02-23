@@ -16,7 +16,6 @@ brew "zsh-syntax-highlighting"
 
 # set up cask
 tap "caskroom/cask"
-tap "caskroom/fonts"
 
 # install cask apps
 cask "1password"
@@ -26,8 +25,6 @@ cask "dash"
 cask "dropbox"
 cask "figma"
 cask "firefox"
-cask "font-roboto"
-cask "font-roboto-mono"
 cask "google-chrome"
 cask "hyper"
 cask "istat-menus"
