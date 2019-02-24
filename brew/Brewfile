@@ -37,3 +37,10 @@ cask "spotify"
 cask "transmission"
 cask "visual-studio-code"
 cask "vlc"
+
+# quicklook plugins
+cask "qlcolorcode"
+cask "qlmarkdown"
+cask "qlstephen"
+cask "qlvideo"
+cask "quicklook-json"
