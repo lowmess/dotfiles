@@ -8,9 +8,6 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias -- -="cd -"
 
-# Recursively remove .DS_Store files
-alias clean-ds="find . -type f -name "*.DS_Store" -ls -delete"
-
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
