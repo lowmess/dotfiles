@@ -7,7 +7,7 @@ First things first, let's use `zsh`.
 chsh -s $(which zsh)
 ```
 
-Next, let's install `git`.
+After this, we'll need to restart our computer. When it's back up, let's install `git`.
 
 ```bash
 # assuming macOS
