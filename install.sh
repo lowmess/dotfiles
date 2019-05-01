@@ -1,10 +1,12 @@
+# Install Homebrew & Homebrew packages
+cd $HOME/dotfiles/brew
+sh ./brew.sh
+cd $HOME
+
 # Set up zsh
 touch $HOME/.zshrc
 echo 'source $HOME/dotfiles/.zshrc' | cat - $HOME/.zshrc | sponge $HOME/.zshrc
 source $HOME/.zshrc
-
-# Install Homebrew & Homebrew packages
-source $HOME/dotfiles/brew/brew.sh
 
 # Set up nvm
 mkdir -p $HOME/.nvm
@@ -16,7 +18,7 @@ npm-globals
 
 # create git config
 touch $HOME/.gitconfig
-echo '[include]\n  path = $HOME/dotfiles/git/.gitconfig' | cat - $HOME/.gitconfig | sponge $HOME/.gitconfig
+printf '[include]\n  path = ~/dotfiles/git/.gitconfig' | cat - $HOME/.gitconfig | sponge $HOME/.gitconfig
 
 # update hyper config
 touch $HOME/.hyper.js
