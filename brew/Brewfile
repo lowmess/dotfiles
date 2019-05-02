@@ -19,6 +19,7 @@ tap "caskroom/cask"
 # install cask apps
 cask "1password"
 cask "alfred"
+cask "android-messages"
 cask "bartender"
 cask "dash"
 cask "dropbox"
