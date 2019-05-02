@@ -21,13 +21,19 @@ module.exports = {
     fontWeight: "normal",
 
     // font weight for bold characters: 'normal' or 'bold'
-    fontWeightBold: "bold",
+    fontWeightBold: "normal",
+
+    // line height as a relative unit
+    lineHeight: 1,
+
+    // letter spacing as a relative unit
+    letterSpacing: 0,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: "rgba(38, 166, 154, 0.75)",
+    cursorColor: "rgba(248, 28, 229, 0.8)",
 
     // terminal text color under BLOCK cursor
-    cursorAccentColor: "#fff",
+    cursorAccentColor: "#000",
 
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
     cursorShape: "BLOCK",
@@ -43,7 +49,7 @@ module.exports = {
     backgroundColor: "#000",
 
     // terminal selection color
-    selectionColor: "rgba(62, 68, 81, 0.5)",
+    selectionColor: "rgba(248, 28, 229, 0.3)",
 
     // border color (window, tabs)
     borderColor: "#333",
@@ -51,7 +57,7 @@ module.exports = {
     // custom CSS to embed in the main window
     css: `
       .splitpane_divider {
-        background-color: #3c4049 !important;
+        background-color: #333 !important;
       }
       .term_term {
         opacity: 0.5;
@@ -128,7 +134,7 @@ module.exports = {
     copyOnSelect: true,
 
     // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
-    defaultSSHApp: true
+    defaultSSHApp: true,
 
     // if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no
     // selection is present (`true` by default on Windows and disables the context menu feature)
@@ -136,6 +142,10 @@ module.exports = {
 
     // URL to custom bell
     // bellSoundURL: 'http://example.com/bell.mp3',
+
+    // Whether to use the WebGL renderer. Set it to false to use canvas-based
+    // rendering (slower, but supports transparent backgrounds)
+    webGLRenderer: true
 
     // for advanced config flags please refer to https://hyper.is/#cfg
   },
@@ -146,7 +156,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyperterm-tab-icons", "hyperemoji", "hyperterm-atom-dark"],
+  plugins: ["hyperterm-tab-icons", "hyperemoji", "hyper-horizon-theme"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
