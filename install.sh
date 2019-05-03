@@ -1,7 +1,7 @@
 # Install Homebrew & Homebrew packages
 cd $HOME/dotfiles/brew
 sh ./brew.sh
-cd $HOME
+cd -
 
 # Set up zsh
 touch $HOME/.zshrc
