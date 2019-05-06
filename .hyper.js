@@ -55,19 +55,7 @@ module.exports = {
     borderColor: "#333",
 
     // custom CSS to embed in the main window
-    css: `
-      .splitpane_divider {
-        background-color: #333 !important;
-      }
-      .term_term {
-        opacity: 0.5;
-        transition: opacity 0.15s ease-in-out;
-        will-change: opacity;
-      }
-      .term_active .term_term {
-        opacity: 1;
-      }
-    `,
+    css: "",
 
     // custom CSS to embed in the terminal window
     termCSS: "",
@@ -161,7 +149,12 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyperterm-tab-icons", "hyperemoji", "hyper-horizon-theme"],
+  plugins: [
+    "hyper-horizon-theme",
+    "hyper-highlight-active-pane",
+    "hyperemoji",
+    "hyperterm-tab-icons"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
