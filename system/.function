@@ -12,6 +12,11 @@ calc() {
   echo "$*" | bc -l;
 }
 
+# Show files on `cd`
+cd() {
+  builtin cd "$@" && ls
+}
+
 # Open query in Dash app
 dash() {
   case $# in
