@@ -140,6 +140,11 @@ module.exports = {
     // selection is present (`true` by default on Windows and disables the context menu feature)
     // quickEdit: true,
 
+    // choose either `'vertical'`, if you want the column mode when Option key is hold during selection (Default)
+    // or `'force'`, if you want to force selection regardless of whether the terminal is in mouse events mode
+    // (inside tmux or vim with mouse mode enabled for example).
+    macOptionSelectionMode: "vertical",
+
     // URL to custom bell
     // bellSoundURL: 'http://example.com/bell.mp3',
 
