@@ -150,9 +150,9 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    "hyper-horizon-theme",
-    "hyper-highlight-active-pane",
     "hyperemoji",
+    "hyper-highlight-active-pane",
+    "hyper-plastic",
     "hyperterm-tab-icons"
   ],
 
