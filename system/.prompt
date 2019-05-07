@@ -4,7 +4,7 @@ source /usr/local/opt/zsh-git-prompt/zshrc.sh
 ZSH_THEME_GIT_PROMPT_PREFIX="$reset_color at "
 ZSH_THEME_GIT_PROMPT_SUFFIX=")"
 ZSH_THEME_GIT_PROMPT_SEPARATOR="("
-ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg[white]%}"
+ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg_bold[white]%}"
 ZSH_THEME_GIT_PROMPT_STAGED="%{$fg[blue]%}%{●%G%}"
 ZSH_THEME_GIT_PROMPT_CONFLICTS="%{$fg[red]%}%{✖%G%}"
 ZSH_THEME_GIT_PROMPT_CHANGED="%{✚%G%}"
@@ -13,6 +13,6 @@ ZSH_THEME_GIT_PROMPT_AHEAD="%{↑%G%}"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{…%G%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{✔%G%}"
 
-local dir="%{$fg[white]%}%1~$reset_color"
+local dir="%{$fg_bold[white]%}%1~$reset_color"
 
-export PS1='$dir$(git_super_status) %{$fg[white]%}→$reset_color '
+export PS1='$dir$(git_super_status) %{$fg_bold[white]%}→$reset_color '
