@@ -52,6 +52,8 @@ mk() {
 }
 
 # get current local weather, tempe by default
-weather() {
-  curl -H "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Tempe}"?0q
+weather()
+{
+  local request="wttr.in/${1-Tempe}?0q"
+  curl -H "Accept-Language: ${LANG%_*}" --compressed "$request"
 }
