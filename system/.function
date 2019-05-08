@@ -57,3 +57,10 @@ weather()
   local request="wttr.in/${1-Tempe}?0q"
   curl -H "Accept-Language: ${LANG%_*}" --compressed "$request"
 }
+forecast()
+{
+    # change Paris to your default location
+    local request="wttr.in/${1-Tempe}?qF"
+    [ "$COLUMNS" -lt 125 ] && request+='n'
+    curl -H "Accept-Language: ${LANG%_*}" --compressed "$request"
+}
