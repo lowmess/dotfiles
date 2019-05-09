@@ -51,16 +51,26 @@ mk() {
   mkdir -p "$@" && cd "$@"
 }
 
-# get current local weather, tempe by default
-weather()
-{
-  local request="wttr.in/${1-Tempe}?0q"
-  curl -H "Accept-Language: ${LANG%_*}" --compressed "$request"
-}
-forecast()
-{
-    # change Paris to your default location
-    local request="wttr.in/${1-Tempe}?qF"
+# get current weather
+# can pass a city name, airport code, etc. to specify location
+# (see wttr.in/:help for location possibilities)
+# -f flag can be set to get a 3 day forecast
+# usage:
+# weather
+# weather phx
+# weather -f London
+weather() {
+  zparseopts -D -a opts -- f
+
+  local argstr="$@"
+  local location=${argstr// /+}
+  local request="wttr.in/${location}?Fq"
+
+  if (( ${opts[(Ie)-f]} )); then
     [ "$COLUMNS" -lt 125 ] && request+='n'
-    curl -H "Accept-Language: ${LANG%_*}" --compressed "$request"
+  else
+    request+='0'
+  fi
+
+  curl -H "Accept-Language: ${LANG%_*}" --compressed "$request"
 }
