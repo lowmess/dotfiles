@@ -1,9 +1,3 @@
-# enable completion
-autoload -Uz compinit && compinit
-
-#
-# antigen plugins
-#
 source /usr/local/share/antigen/antigen.zsh
 
 # oh-my-zsh plugins
@@ -14,7 +8,6 @@ antigen bundle git-prompt
 
 # standalone plugins
 antigen bundle ael-code/zsh-colored-man-pages
-antigen bundle arzzen/calc.plugin.zsh
 antigen bundle rupa/z
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
