@@ -1,4 +1,5 @@
 # install deps
+brew "antigen"
 brew "coreutils"
 brew "git"
 brew "hub"
@@ -7,10 +8,6 @@ brew "nvm"
 brew "thefuck"
 brew "trash"
 brew "tree"
-brew "z"
-brew "zsh-autosuggestions"
-brew "zsh-git-prompt"
-brew "zsh-syntax-highlighting"
 
 # set up cask
 tap "caskroom/cask"

@@ -1,11 +1,23 @@
 # enable completion
 autoload -Uz compinit && compinit
 
-# z - jump around
-source /usr/local/etc/profile.d/z.sh
+#
+# antigen plugins
+#
+source /usr/local/share/antigen/antigen.zsh
 
-# autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# oh-my-zsh plugins
+antigen use oh-my-zsh
 
-# syntax highlighting (should go last)
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+antigen bundle command-not-found
+antigen bundle git-prompt
+
+# standalone plugins
+antigen bundle ael-code/zsh-colored-man-pages
+antigen bundle arzzen/calc.plugin.zsh
+antigen bundle rupa/z
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# load plugins
+antigen apply

@@ -1,6 +1,3 @@
-# git prompt
-source /usr/local/opt/zsh-git-prompt/zshrc.sh
-
 ZSH_THEME_GIT_PROMPT_PREFIX="$reset_color at "
 ZSH_THEME_GIT_PROMPT_SUFFIX=")"
 ZSH_THEME_GIT_PROMPT_SEPARATOR="("
@@ -15,4 +12,5 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{✔%G%}"
 
 local dir="%{$fg_bold[white]%}%1~$reset_color"
 
-export PS1='$dir$(git_super_status) %{$fg_bold[white]%}→$reset_color '
+PS1='$dir$(git_super_status) %{$fg_bold[white]%}→$reset_color '
+RPROMPT=''

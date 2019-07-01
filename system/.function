@@ -7,11 +7,6 @@ c() {
   fi
 }
 
-# Calculator
-calc() {
-  echo "$*" | bc -l;
-}
-
 # Show files on `cd`
 cd() {
   builtin cd "$@" && ls
