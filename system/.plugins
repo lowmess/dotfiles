@@ -1,6 +1,8 @@
 source /usr/local/share/antigen/antigen.zsh
 
 # oh-my-zsh plugins
+antigen use oh-my-zsh
+
 antigen bundle command-not-found
 antigen bundle git-prompt
 
