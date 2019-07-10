@@ -10,7 +10,7 @@ source $HOME/.zshrc
 
 # create git config
 touch $HOME/.gitconfig
-printf '[include]\n  path = ~/dotfiles/git/.gitconfig' | cat - $HOME/.gitconfig | sponge $HOME/.gitconfig
+echo '[include]\n  path = ~/dotfiles/git/.gitconfig' | cat - $HOME/.gitconfig | sponge $HOME/.gitconfig
 
 # create symlinked hyper config
 ln $HOME/dotfiles/.hyper.js $HOME/.hyper.js
