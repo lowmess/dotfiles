@@ -13,7 +13,7 @@ touch $HOME/.gitconfig
 echo '[include]\n  path = ~/dotfiles/git/.gitconfig' | cat - $HOME/.gitconfig | sponge $HOME/.gitconfig
 
 # create symlinked hyper config
-ln $HOME/dotfiles/.hyper.js $HOME/.hyper.js
+ln -s $HOME/dotfiles/.hyper.js $HOME/.hyper.js
 
 # Set up nvm
 mkdir -p $HOME/.nvm
