@@ -12,16 +12,6 @@ cd() {
   builtin cd "$@" && ls
 }
 
-# Open query in Dash app
-dash() {
-  case $# in
-    1) QUERY="$1";;
-    2) QUERY="$1:$2";;
-    *) echo "Usage: dash [docset] query"; return 1;
-  esac
-  open "dash://$QUERY"
-}
-
 # Get gzip size of file
 gzip-size() {
   local bytesize=$(gzip -c $1 | wc -c)
@@ -30,7 +20,7 @@ gzip-size() {
   echo "$formatted"kb
 }
 
-# Automatically install globals and set npm config when switching nvm versions
+# Automatically install globals when switching nvm versions
 nvm_with_config() {
   if [[ $1 == "install" ]]; then
     nvm "$@"
