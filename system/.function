@@ -7,11 +7,6 @@ c() {
   fi
 }
 
-# Show files on `cd`
-cd() {
-  builtin cd "$@" && ls
-}
-
 # Get gzip size of file
 gzip-size() {
   local bytesize=$(gzip -c $1 | wc -c)
