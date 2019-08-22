@@ -1,5 +1,6 @@
 node_modules
 bower_components
+.vscode
 *.log
 
 # macOS - https://github.com/github/gitignore/blob/d0b1f7fef90caba0a22bb0a82d2f0abcc2cbc302/Global/macOS.gitignore
