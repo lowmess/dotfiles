@@ -5,12 +5,12 @@ cd -
 
 # Set up zsh
 touch $HOME/.zshrc
-echo 'source $HOME/dotfiles/.zshrc' | cat - $HOME/.zshrc | sponge $HOME/.zshrc
+echo 'source $HOME/dotfiles/.zshrc' >> $HOME/.zshrc
 source $HOME/.zshrc
 
 # create git config
 touch $HOME/.gitconfig
-echo '[include]\n  path = ~/dotfiles/git/.gitconfig' | cat - $HOME/.gitconfig | sponge $HOME/.gitconfig
+echo '[include]\n  path = ~/dotfiles/git/.gitconfig' >> $HOME/.gitconfig
 
 # Set up nvm
 mkdir -p $HOME/.nvm
