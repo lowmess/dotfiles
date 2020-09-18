@@ -9,9 +9,6 @@ brew "thefuck"
 brew "trash"
 brew "tree"
 
-# set up cask
-tap "caskroom/cask"
-
 # install cask apps
 cask "1password"
 cask "alfred"
@@ -23,8 +20,8 @@ cask "figma"
 cask "firefox"
 cask "google-chrome"
 cask "gpg-suite"
-cask "hyper"
 cask "istat-menus"
+cask "iterm2"
 cask "kap"
 cask "rightfont"
 cask "slack"
