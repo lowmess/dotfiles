@@ -12,6 +12,9 @@
 [push]
   default = simple
 
+[pull]
+  rebase = true
+
 [alias]
   eat = stash
   poop = stash pop
