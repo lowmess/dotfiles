@@ -25,6 +25,8 @@
   co = "!f() { git checkout \"$1\" 2> /dev/null || git checkout -b \"$1\"; }; f"
   # use gitmoji
   moji = "!gitmoji -c"
+  # list new commits, in a pretty way
+  ls = !"BASE=$1; git log --pretty=oneline --abbrev-commit ${BASE:-master}..HEAD"
 
 [hub]
   protocol = https
