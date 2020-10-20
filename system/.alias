@@ -23,9 +23,6 @@ alias tree="tree -FC --filelimit=100 --dirsfirst --prune"
 # shorter git
 alias g="git"
 
-# alias `hub` to `git`
-eval "$(hub alias -s)"
-
 # fuck
 eval "$(thefuck --alias)"
 
