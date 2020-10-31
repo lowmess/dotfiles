@@ -9,6 +9,9 @@
   excludesfile = ~/dotfiles/git/.gitignore_global
   editor = nano
 
+[init]
+  defaultBranch = main
+
 [push]
   default = simple
 
@@ -20,7 +23,7 @@
   poop = stash pop
   a = add .
   # delete merged branches
-  purge = "!git branch --merged | grep -v \"\\*\\|master\\|develop\" | xargs git branch -d"
+  purge = "!git branch --merged | grep -v \"\\*\\|master\\|main\\|develop\" | xargs git branch -d"
   # Switch to a branch, creating it if necessary
   co = "!f() { git checkout \"$1\" 2> /dev/null || git checkout -b \"$1\"; }; f"
   # use gitmoji
