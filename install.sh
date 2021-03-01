@@ -14,8 +14,8 @@ echo '[include]\n  path = ~/dotfiles/git/.gitconfig' >> $HOME/.gitconfig
 
 # Set up nvm
 mkdir -p $HOME/.nvm
-nvm install 12
-nvm alias default 12
+nvm install --lts
+nvm alias default lts/*
 
 # Install global Node deps
 npm-globals
