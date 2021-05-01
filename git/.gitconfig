@@ -7,7 +7,6 @@
 
 [core]
   excludesfile = ~/dotfiles/git/.gitignore_global
-  editor = nano
 
 [init]
   defaultBranch = main
@@ -17,6 +16,9 @@
 
 [pull]
   rebase = true
+
+[commit]
+  gpgsign = true
 
 [alias]
   eat = stash
