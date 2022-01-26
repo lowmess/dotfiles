@@ -10,5 +10,7 @@ ZSH_THEME_GIT_PROMPT_AHEAD="%{↑%G%}"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{…%G%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{✔%G%}"
 
-PS1='%B%1~%b$(git_super_status) → '
+local NEWLINE=$'\n'
+
+PS1='$NEWLINE%B%1~%b$(git_super_status) → '
 RPROMPT=''
