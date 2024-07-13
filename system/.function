@@ -15,17 +15,6 @@ gzip-size() {
   echo "$formatted"kb
 }
 
-# Automatically install globals when switching nvm versions
-nvm_with_config() {
-  if [[ $1 == "install" ]]; then
-    nvm "$@"
-    npm-globals
-  else
-    nvm "$@"
-  fi
-}
-alias nvm="nvm_with_config"
-
 # Create a new directory and enter it
 mk() {
   mkdir -p "$@" && cd "$@"
