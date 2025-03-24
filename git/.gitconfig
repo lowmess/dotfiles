@@ -11,14 +11,47 @@
 [init]
   defaultBranch = main
 
+[commit]
+  gpgsign = true
+  verbose = true
+
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+
+[merge]
+  conflictstyle = zdiff3
+
+[rerere]
+  enabled = true
+  autoupdate = true
+
 [push]
   default = simple
+  autoSetupRemote = true
+  followTags = true
 
 [pull]
   rebase = true
 
-[commit]
-  gpgsign = true
+[fetch]
+  prune = true
+  pruneTags = true
+  all = true
+
+[branch]
+  sort = -committerdate
+
+[tag]
+  sort = version:refname
+
+[column]
+  ui = auto
+
+[help]
+  autocorrect = prompt
 
 [alias]
   eat = stash
