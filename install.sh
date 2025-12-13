@@ -1,21 +1,24 @@
-# Install Homebrew & Homebrew packages
+# install Homebrew & packages
 cd $HOME/dotfiles/brew
 sh ./brew.sh
 cd -
 
-# Set up zsh
+# set up Zsh
 touch $HOME/.zshrc
 echo 'source $HOME/dotfiles/.zshrc' >> $HOME/.zshrc
 source $HOME/.zshrc
+
+# configure Ghostty
+echo 'config-file = "~/dotfiles/settings/ghostty/config"' >> $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
 
 # create git config
 touch $HOME/.gitconfig
 echo '[include]\n  path = ~/dotfiles/git/.gitconfig' >> $HOME/.gitconfig
 
-# Set up nvm
+# set up nvm
 mkdir -p $HOME/.nvm
 nvm install --lts
 nvm alias default lts/*
 
-# Install global Node deps
+# install global Node deps
 npm-globals
