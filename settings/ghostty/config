@@ -12,9 +12,9 @@ window-padding-x = 16
 window-padding-y = 8
 
 # text
-font-family="Dank Mono"
-font-size = 16
-font-thicken = true
+font-family="Fira Code"
+font-size = 14
+font-thicken = false
 
 #colors
 palette = 0=#5F6672
