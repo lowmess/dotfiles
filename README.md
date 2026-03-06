@@ -1,29 +1,8 @@
 ### Set up a new machine
 
-First things first, let's use `zsh`.
-
-```bash
-# set default shell to zsh
-chsh -s $(which zsh)
-```
-
-After this, we'll need to restart our computer. When it's back up, let's install `git`.
-
-```bash
-# assuming macOS
-xcode-select --install
-```
-
-Now let's clone or download the repo to `~/dotfiles/`.
-
-```bash
-cd ~ && git clone https://github.com/lowmess/dotfiles.git
-```
-
-Finally, we can run the install script. It's not an executable because I'm lazy.
-
-```bash
-cd ~/dotfiles && sh ./install.sh
-```
-
-The install script will install tools with `homebrew`, install apps with `cask`, install `nvm` and global node packages, and extend default configs with our own.
+1. Run `xcode-select --install` (or otherwise install `git`)
+1. Install [1Password](https://1password.com/downloads/mac)
+1. Configure the [1Password SSH Agent](https://developer.1password.com/docs/ssh)
+1. Run `git@github.com:lowmess/dotfiles.git` from the home directory
+1. Run `sh ./install.sh` from within the dotfiles repo
+1. Have fun setting up all those apps you just downloaded
