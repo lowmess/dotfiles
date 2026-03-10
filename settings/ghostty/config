@@ -2,6 +2,9 @@
 copy-on-select = clipboard
 cursor-style = block
 keybind = global:cmd+grave_accent=toggle_quick_terminal
+notify-on-command-finish = unfocused
+notify-on-command-finish-action = no-bell,notify
+notify-on-command-finish-after = 30s
 shell-integration-features = no-cursor
 unfocused-split-opacity = 0.5
 window-inherit-working-directory = false
@@ -35,11 +38,10 @@ palette = 14=#56B6C2
 palette = 15=#A9B2C3
 
 background = #181A1F
-foreground = #A9B2C3 
+foreground = #A9B2C3
 cursor-color = #A9B2C3
 selection-background = #A9B2C3
 selection-foreground = #0D1117
 
 bold-color = #FFFFFF
 split-divider-color = #21252B
-
