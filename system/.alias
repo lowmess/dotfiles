@@ -26,9 +26,10 @@ alias g="git"
 # fuck
 eval "$(thefuck --alias)"
 
-# install global npm tools. useful when switching nvm versions
-alias npm-globals="npm i -g npm np gitmoji-cli vercel"
+# install global npm tools
+alias npm-globals="npm install -g npm np gitmoji-cli"
 
-# shorter npm
-alias i="npm install"
-alias r="npm run"
+# shorter nub
+alias i="nub install"
+alias r="nub run"
+alias x="nubx"
