@@ -29,7 +29,7 @@ eval "$(thefuck --alias)"
 # install global npm tools
 alias npm-globals="npm install -g npm np gitmoji-cli"
 
-# shorter nub
-alias i="nub install"
-alias r="nub run"
-alias x="nubx"
+# shorter npm
+alias i="npm install"
+alias r="npm run"
+alias x="npx"
