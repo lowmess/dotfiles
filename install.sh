@@ -15,10 +15,9 @@ echo 'config-file = "~/dotfiles/settings/ghostty/config"' >> $HOME/Library/Appli
 touch $HOME/.gitconfig
 echo '[include]\n  path = ~/dotfiles/git/.gitconfig' >> $HOME/.gitconfig
 
-# set up nvm
-mkdir -p $HOME/.nvm
-nvm install --lts
-nvm alias default "lts/*"
+# set up fnm
+fnm install 'lts/*'
+fnm default 'lts/*'
 
 # install global Node deps
 npm-globals
