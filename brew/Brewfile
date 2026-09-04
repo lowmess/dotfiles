@@ -1,5 +1,4 @@
 # install deps
-brew "1password-cli"
 brew "antigen"
 brew "coreutils"
 brew "fnm"
@@ -15,7 +14,6 @@ cask "alfred"
 cask "antinote"
 cask "dash"
 cask "discord"
-cask "dropbox"
 cask "figma"
 cask "firefox"
 cask "font-fira-code"

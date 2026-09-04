@@ -1,7 +1,7 @@
 [user]
   name = Alec Lomas
   email = alec@lowmess.com
-  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJplrsJA4IbOMz9xncyG5IUAfIfiQcSLP1VIRt3foBEF
+  signingkey = ~/.ssh/alomas-git.pub
 
 [github]
   user = lowmess
@@ -20,7 +20,7 @@
   format = ssh
 
 [gpg "ssh"]
-  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+  allowedSignersFile = ~/.ssh/allowed_signers
 
 [diff]
   algorithm = histogram
