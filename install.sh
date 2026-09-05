@@ -9,9 +9,6 @@ ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs ~/iCloud
 # set screenshots folder to iCloud
 defaults write com.apple.screencapture location ~/iCloud/Photos/Screenshots
 
-#create strongbox alias
-ln -s ~/Library/Group\ Containers/group.strongbox.mac.mcguill/agent.sock ~/.strongbox/agent.sock
-
 # install Homebrew & packages
 cd $HOME/dotfiles/brew
 sh ./brew.sh
